@@ -38,10 +38,6 @@ public class ResourceCentre {
 				ResourceCentre.setHeader("ADD");			
 				itemTypeMenu();
 				
-				ResourceCentre.setHeader("ITEM TYPES");
-				System.out.println("1. Camcorder");
-				System.out.println("2. Chromebook");
-
 				int itemType = Helper.readInt("Enter option to select item type > ");
 
 				if (itemType == ITEM_TYPE_CAMCODER) {
@@ -63,12 +59,7 @@ public class ResourceCentre {
 			} else if (option == OPTION_LOAN) {
 				// Loan item
 				ResourceCentre.setHeader("LOAN");			
-
 				itemTypeMenu();
-				
-				ResourceCentre.setHeader("ITEM TYPES");
-				System.out.println("1. Camcorder");
-				System.out.println("2. Chromebook");
 
 				int itemType = Helper.readInt("Enter option to select item type > ");
 
@@ -86,10 +77,6 @@ public class ResourceCentre {
 				// Return item
 				ResourceCentre.setHeader("RETURN");				
 				itemTypeMenu();
-			
-				ResourceCentre.setHeader("ITEM TYPES");
-				System.out.println("1. Camcorder");
-				System.out.println("2. Chromebook");
 
 				int itemType = Helper.readInt("Enter option to select item type > ");
 				if (itemType == ITEM_TYPE_CAMCODER) {
