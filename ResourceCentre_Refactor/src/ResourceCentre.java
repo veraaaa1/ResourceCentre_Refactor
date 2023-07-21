@@ -37,7 +37,7 @@ public class ResourceCentre {
 				// Add a new item
 				ResourceCentre.setHeader("ADD");			
 				itemTypeMenu();
-				
+
 				int itemType = Helper.readInt("Enter option to select item type > ");
 
 				if (itemType == ITEM_TYPE_CAMCODER) {
@@ -137,6 +137,7 @@ public class ResourceCentre {
 	}
 
 	//================================= Option 1 View (CRUD - Read) =================================
+	//Kai Wen and Yilun
 	public static String retrieveAllCamcorder(ArrayList<Camcorder> camcorderList) {
 		String output = "";
 
@@ -154,15 +155,15 @@ public class ResourceCentre {
 		output += retrieveAllCamcorder(camcorderList);	
 		System.out.println(output);
 	}
-
+	//Kai Wen and Yilun
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
 		// write your code here
-			for (int i = 0; i < chromebookList.size(); i++) {
+		for (int i = 0; i < chromebookList.size(); i++) {
 
-				output += String.format("%-84s",chromebookList.get(i).toString());
-			}
-		
+			output += String.format("%-84s",chromebookList.get(i).toString());
+		}
+
 		return output;
 	}
 

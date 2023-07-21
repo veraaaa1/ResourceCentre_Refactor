@@ -10,8 +10,9 @@ public class Camcorder extends Item{
 	public int getOpticalZoom() {
 		return opticalZoom;
 	}
-	
+
 	public String toString(){
+		//Kai Wen and Yilun
 		String output = super.toString();
 		output = String.format("%-63s %-20d\n",output, opticalZoom);
 		return output;
