@@ -228,7 +228,7 @@ public class ResourceCentre {
 			return false;
 		
 		for (int i = 0; i < camcorderList.size(); i++) {
-					
+					//changes made xe
 			String assetTag = camcorderList.get(i).getAssetTag();
 			
 			boolean availibility = camcorderList.get(i).getIsAvailable();
